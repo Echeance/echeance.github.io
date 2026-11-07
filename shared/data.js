@@ -7,7 +7,7 @@ window.PORTFOLIO = {
   person: {
     first: "Nathan",
     last: "Ghys",
-    handle: "ympax14",
+    handle: "echeance",
     role: "Développeur full-stack",
     status: "Étudiant en 2e année de BUT Informatique",
     school: "IUT d'Arles · Aix-Marseille Université",
@@ -18,7 +18,7 @@ window.PORTFOLIO = {
     looking: "Ouvert à un stage ou une alternance.",
     email: "ympax14@gmail.com",
     links: {
-      github: "https://github.com/ympax14",
+      github: "https://github.com/echeance",
       linkedin: "https://www.linkedin.com/in/nathan-ghys-3a8505433",
     },
     languages: ["Français · langue maternelle", "Anglais · courant (B2-C1)", "Italien · niveau lycée"],
@@ -97,7 +97,7 @@ window.PORTFOLIO = {
       numbers: [["40", "positions par joueur"], ["+75 ms", "de marge au rembobinage"], ["20", "ticks/s contournés"]],
       stack: ["Java", "NMS", "Netty", "Maven"],
       learnings: "Le multithreading pour de vrai : verrous, courses de données et latence mesurée à la milliseconde.",
-      images: ["neverless-rewind.webp"], links: { github: "https://github.com/ympax14/NeverLessSpigot" },
+      images: ["neverless-rewind.webp"], links: { github: "https://github.com/echeance/NeverLessSpigot" },
     },
     {
       id: "procxygen", chapter: "serveurs", year: "2026", featured: false,
@@ -108,7 +108,7 @@ window.PORTFOLIO = {
       numbers: [["3", "services pilotés"], ["3 s", "pour relancer un crash"]],
       stack: ["Node.js", "Express", "Socket.io", "systemd"],
       learnings: "Ce qui se passe une fois le code en production.",
-      images: ["procxygen.webp"], links: { github: "https://github.com/ympax14/Procxygen" },
+      images: ["procxygen.webp"], links: { github: "https://github.com/echeance/Procxygen" },
     },
     {
       id: "s201", chapter: "ecole", year: "SAÉ S2", featured: false,
@@ -117,7 +117,7 @@ window.PORTFOLIO = {
       summary: "Une application pour créer, ranger et consulter des fiches d'albums et de morceaux, avec pochettes, recherche et notifications.",
       details: ["Interface Qt sur mesure en QSS, multilingue.", "Import et export JSON et XML."],
       numbers: [], stack: ["C++", "Qt"], learnings: "Structurer une vraie interface de bureau.",
-      images: ["nowplaying.webp"], links: { github: "https://github.com/ympax14/S2.01" },
+      images: ["nowplaying.webp"], links: { github: "https://github.com/echeance/S2.01" },
     },
     {
       id: "s202", chapter: "ecole", year: "SAÉ S2", featured: true,
@@ -127,7 +127,7 @@ window.PORTFOLIO = {
       details: ["Rendu vectoriel avec QGraphicsScene, niveau de détail adapté au zoom.", "Floyd-Warshall sur un graphe pondéré : tous les plus courts chemins en une passe.", "Données des villes et des régions en CSV et GeoJSON."],
       numbers: [["1", "passe pour toutes les paires"]],
       stack: ["C++", "Qt", "GeoJSON"], learnings: "L'algorithmique des graphes, appliquée à une vraie carte.",
-      images: ["navyra-route.webp"], links: { github: "https://github.com/ympax14/S2.02" },
+      images: ["navyra-route.webp"], links: { github: "https://github.com/echeance/S2.02" },
     },
     {
       id: "s205", chapter: "ecole", year: "SAÉ S2", featured: false,
@@ -136,7 +136,7 @@ window.PORTFOLIO = {
       summary: "Un logiciel qui simule une consommation annuelle et classe les offres d'électricité et de gaz, de la moins chère à la plus chère.",
       details: ["Espace client et espace administrateur.", "Historique des tarifs par offre et par puissance."],
       numbers: [], stack: ["C++", "Qt"], learnings: "Modéliser un domaine métier réel.",
-      images: ["enersense-compare.webp"], links: { github: "https://github.com/ympax14/S2.05" },
+      images: ["enersense-compare.webp"], links: { github: "https://github.com/echeance/S2.05" },
     },
     {
       id: "facelog", chapter: "ecole", year: "SAÉ S3 · 2026", featured: true,
@@ -168,7 +168,7 @@ window.PORTFOLIO = {
       numbers: [["3", "services en production"], ["2", "langues"], ["1", "accord officiel"]],
       stack: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Socket.io", "Discord.js"],
       learnings: "Livrer un produit pour une vraie communauté, du temps réel jusqu'au support.",
-      images: ["deltarise-hero.webp", "deltarise-modes.webp", "deltarise-mobile.webp"], links: { github: "https://github.com/ympax14/DeltaRise" },
+      images: ["deltarise-hero.webp", "deltarise-modes.webp", "deltarise-mobile.webp"], links: { github: "https://github.com/echeance/DeltaRise" },
     },
     {
       id: "avenoir", chapter: "avenoir", year: "2026 · en cours", featured: true,
@@ -184,7 +184,7 @@ window.PORTFOLIO = {
       numbers: [["C++23", "moderne"], ["24", "tests d'injection"], ["2", "systèmes"]],
       stack: ["C++23", "CMake", "vcpkg", "LLM"],
       learnings: "Concevoir la sécurité d'un logiciel qui agit sur une vraie machine.",
-      images: ["avenoir-cli.webp"], links: { github: "https://github.com/ympax14/Avenoir" },
+      images: ["avenoir-cli.webp"], links: { github: "https://github.com/echeance/Avenoir" },
     },
   ],
 
