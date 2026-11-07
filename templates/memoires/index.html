@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathan Ghys · Mémoires</title>
+<meta name="description" content="Portfolio de Nathan Ghys, développeur full-stack : une bobine de souvenirs que l'on traverse en profondeur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Nanum+Pen+Script&family=Courier+Prime&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="dust"></canvas>
+<div class="stage"><div class="world" id="world"></div></div>
+<div class="leak l1"></div><div class="leak l2"></div>
+<div class="flicker"></div>
+
+<header class="reel"><span id="reelName"></span><span id="timer">Bobine 1 · 00:00</span></header>
+<nav class="strip" id="strip" aria-label="Souvenirs"></nav>
+<section class="narr" id="narr" aria-live="polite"></section>
+<p class="hint" id="hint">Faire défiler pour avancer dans la bobine</p>
+
+<div class="leader" id="leader">
+  <div class="dial"><i class="sweep"></i><b id="count">3</b></div>
+  <p id="leaderLine"></p>
+  <button id="skip">Passer l'amorce</button>
+</div>
+<div id="track"></div>
+
+<script src="../../shared/data.js"></script>
+<script src="../../shared/utils.js"></script>
+<script src="tunnel.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

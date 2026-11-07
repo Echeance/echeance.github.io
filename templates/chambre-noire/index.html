@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathan Ghys · Chambre noire</title>
+<meta name="description" content="Portfolio de Nathan Ghys, développeur full-stack : chaque projet est un tirage à révéler en chambre noire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Kalam:wght@300;400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="ripple"><feTurbulence id="turb" type="fractalNoise" baseFrequency=".012 .03" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="14"/></filter>
+</svg>
+
+<main class="room" id="room">
+  <section class="line" aria-label="Tirages déjà révélés">
+    <svg class="wire" viewBox="0 0 1000 60" preserveAspectRatio="none"><path d="M0 8 Q500 58 1000 8" fill="none" stroke="#bfb6a8" stroke-width="1.6"/></svg>
+    <div class="hung" id="hung"></div>
+  </section>
+
+  <section class="sheet" aria-label="Planche contact">
+    <header><h2>Planche contact</h2><p>Choisir un négatif</p></header>
+    <div class="negs" id="negs"></div>
+  </section>
+
+  <section class="bench" aria-label="Bacs de développement">
+    <div class="tray" data-step="0"><span class="lbl">1 · Révélateur</span><div class="bath"><div class="paper" id="paper"><img id="print" alt=""></div></div><span class="timer" id="timer">—</span></div>
+    <div class="tray" data-step="1"><span class="lbl">2 · Arrêt</span><div class="bath"></div></div>
+    <div class="tray" data-step="2"><span class="lbl">3 · Fixateur</span><div class="bath"></div></div>
+    <p class="howto" id="howto">Cliquez sur un négatif : il se révèle dans le bac. Maintenez la souris sur le bac pour l'agiter et accélérer.</p>
+  </section>
+
+  <nav class="desk">
+    <button id="notebook">Carnet de labo</button>
+    <button id="order">Commander un tirage</button>
+    <button id="lightBtn" aria-pressed="false">Allumer la lumière</button>
+  </nav>
+  <p class="sign" id="sign"></p>
+</main>
+
+<div class="safelight" id="safelight" aria-hidden="true"></div>
+
+<section class="view" id="view" aria-live="polite"></section>
+<section class="book" id="book" role="dialog" aria-label="Carnet de labo"></section>
+
+<div class="door" id="door">
+  <p class="d1">Chambre noire</p>
+  <p class="d2" id="doorWho"></p>
+  <button id="doorBtn">Fermer la porte et allumer la lampe rouge</button>
+  <p class="d3">Ici, les projets ne s'affichent pas : ils se révèlent.</p>
+</div>
+
+<script src="../../shared/data.js"></script>
+<script src="../../shared/utils.js"></script>
+<script src="lab.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

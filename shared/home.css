@@ -1,0 +1,37 @@
+/* Sommaire : une page de magazine, chaque titre dans la typographie de son template. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { min-height: 100%; }
+body { background: #ecebe6; color: #141312; font: 400 16px/1.5 "Literata", Georgia, serif; -webkit-font-smoothing: antialiased; display: flex; flex-direction: column; min-height: 100vh; }
+a { color: inherit; }
+.top, .foot { display: flex; justify-content: space-between; gap: 20px; padding: 22px clamp(18px, 4vw, 56px); font-size: 15px; }
+.top b { font-weight: 400; font-style: italic; }
+.top .r, .foot span { color: #77736c; }
+.foot { border-top: 1px solid #141312; margin: 0 clamp(18px, 4vw, 56px); padding: 16px 0 22px; }
+.home { flex: 1; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(20px, 4vw, 70px); align-items: center; padding: 0 clamp(18px, 4vw, 56px); border-top: 1px solid #141312; margin: 0 clamp(18px, 4vw, 56px); padding: 2vh 0; }
+.list { list-style: none; }
+.list li { border-bottom: 1px solid rgba(20, 19, 18, .2); }
+.list li:last-child { border-bottom: 0; }
+.list a { display: flex; align-items: baseline; gap: clamp(14px, 2vw, 30px); padding: clamp(6px, 1.4vh, 14px) 0; text-decoration: none; transition: padding .4s cubic-bezier(.2, .9, .2, 1), color .3s; }
+.list .n { font: italic 400 16px "Literata", serif; color: #9a958c; width: 2ch; }
+.list .t { font-size: clamp(44px, 7.4vh, 92px); line-height: 1; transition: transform .5s cubic-bezier(.2, .9, .2, 1); transform-origin: left center; }
+.t1 { font-family: "IM Fell English SC", serif; letter-spacing: .04em; }
+.t2 { font-family: "Libre Caslon Text", serif; letter-spacing: -.03em; }
+.t3 { font-family: "Anybody", sans-serif; font-weight: 900; font-stretch: 60%; text-transform: uppercase; letter-spacing: -.01em; transition: font-stretch .5s, transform .5s !important; }
+.t4 { font-family: "Allerta Stencil", sans-serif; letter-spacing: .02em; }
+.t5 { font-family: "Bowlby One", sans-serif; color: #d9374b; -webkit-text-stroke: 2px #141312; paint-order: stroke fill; }
+.list a:hover, .list a:focus-visible, .list a.on { padding-left: 14px; outline: none; }
+.list a:hover .t, .list a:focus-visible .t, .list a.on .t { transform: scale(1.04); }
+.list a.on .t3, .list a:hover .t3 { font-stretch: 130%; }
+.list a.on .t4 { color: #c01e0e; }
+.pv { position: relative; align-self: center; }
+.pv img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .5); transition: opacity .35s, transform .6s cubic-bezier(.2, .9, .2, 1); }
+.pv img.swap { opacity: 0; transform: translateY(8px); }
+.pv figcaption { margin-top: 14px; font: italic 400 18px/1.45 "Literata", serif; max-width: 52ch; min-height: 3em; }
+.leave { position: fixed; inset: 0; background: #141312; transform: scaleY(0); transform-origin: bottom; transition: transform .6s cubic-bezier(.7, 0, .2, 1); z-index: 9; }
+.leave.on { transform: scaleY(1); }
+@media (max-width: 860px) {
+  .home { grid-template-columns: 1fr; }
+  .pv { order: -1; }
+  .list .t { font-size: 48px; }
+}
+@media (prefers-reduced-motion: reduce) { .list a, .list .t, .pv img, .leave { transition: none; } }

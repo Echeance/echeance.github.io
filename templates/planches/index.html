@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathan Ghys · Planches</title>
+<meta name="description" content="Portfolio de Nathan Ghys, développeur full-stack : une bande dessinée animée, case après case.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Shantell+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="viewport" id="viewport"><div class="comic" id="comic"></div></div>
+
+<aside class="note" id="note" aria-live="polite"></aside>
+
+<nav class="bar" aria-label="Lecture">
+  <button id="prev" aria-label="Case précédente">◂</button>
+  <span class="pos" id="pos">Couverture</span>
+  <button id="next" aria-label="Case suivante">▸</button>
+  <button id="page" class="page">Vue planche</button>
+</nav>
+
+<script src="../../shared/data.js"></script>
+<script src="../../shared/utils.js"></script>
+<script src="layout.js"></script>
+<script src="camera.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

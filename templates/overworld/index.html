@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathan Ghys · Atlas</title>
+<meta name="description" content="Portfolio de Nathan Ghys, développeur full-stack : un atlas gravé où chaque projet est une étape du voyage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg id="world" aria-label="Carte des projets">
+  <defs>
+    <pattern id="sea" width="9" height="9" patternUnits="userSpaceOnUse"><path d="M0 4.5 H9" stroke="#a9b2a6" stroke-width=".7"/></pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0 V10" stroke="#5b4a3a" stroke-width="1.1"/></pattern>
+    <pattern id="cross" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)"><path d="M0 0 V12 M0 0 H12" stroke="#5b4a3a" stroke-width=".9"/></pattern>
+  </defs>
+  <g id="cam"></g>
+</svg>
+
+<header class="cartouche" id="cartouche">
+  <p class="c-top">Carte des travaux de</p>
+  <h1 id="cName"></h1>
+  <p class="c-role" id="cRole"></p>
+  <p class="c-scale">Dressée à Arles, en l'an 2026</p>
+</header>
+
+<nav class="tools" aria-label="Outils de la carte">
+  <button data-ov="legend">Légende</button>
+  <button data-ov="letter">Écrire</button>
+  <button id="recenter">Vue d'ensemble</button>
+</nav>
+
+<div class="mini" id="mini" aria-hidden="true"></div>
+<p class="howto">Faire glisser pour voyager · cliquer sur une étape · flèches ← →</p>
+
+<aside class="sheet" id="sheet" aria-live="polite"></aside>
+
+<div class="ov" id="legend" role="dialog" aria-label="Légende des compétences">
+  <div class="ov-box"><button class="ov-x" aria-label="Fermer">×</button>
+    <h2>Légende</h2><p class="ov-sub">Les instruments emportés pendant le voyage</p>
+    <div id="legendBody" class="legend-grid"></div>
+  </div>
+</div>
+<div class="ov" id="letter" role="dialog" aria-label="Contact">
+  <div class="ov-box letter-box"><button class="ov-x" aria-label="Fermer">×</button>
+    <p class="l-date">Arles, le <span id="lDate"></span></p>
+    <p class="l-body" id="lBody"></p>
+    <div class="l-links" id="lLinks"></div>
+    <a class="seal" id="seal" aria-label="Envoyer un e-mail">NG</a>
+  </div>
+</div>
+
+<div class="draft" id="draft"><p>La carte se dessine…</p></div>
+
+<script src="../../shared/data.js"></script>
+<script src="../../shared/utils.js"></script>
+<script src="world.js"></script>
+<script src="camera.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
